@@ -4,7 +4,7 @@ Writing a function which takes an array as an argument and return an array with 
 
 ## Whiteboard Process
 
-![whiteboard](./Code Challenges01.jpg)
+![whiteboard](./CodeChallenges01.jpg)
 
 ## Approach & Efficiency
 
