@@ -65,6 +65,6 @@ This is a basic example demonstrating the usage of the LinkedList class. You can
 
 Feel free to check the [LinkedList.cs](../LinkedList.cs) file for the complete implementation details.
 
-Also, Feel free to check the [LinkedListTests.cs](.../DataStructuresTestes/LinkedListTestes.cs) file for the complete Tests details.
+Also, Feel free to check the [LinkedListTests.cs](../DataStructuresTestes/LinkedListTestes.cs) file for the complete Tests details.
 
 ![LinkedList Tests](./CC5tests.PNG)
