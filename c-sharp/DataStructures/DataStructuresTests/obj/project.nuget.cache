@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m9oZagXMKvP9hgyibBy5uG0qBjYE8XQgrmT0144pkAqlx10WLytg0X4fNG+DV4WAxRPtFARdrA7dySfRfmgWyg==",
+  "dgSpecHash": "rDytbz0t7HypKWLZB1NKMfFGLlQaCfNUhgP734Apsg0Pw2HgAwZFCVTRiQPiRLK4KVLLoFdxjZhwcPfDdlfTug==",
   "success": true,
   "projectFilePath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructuresTests\\DataStructuresTests.csproj",
   "expectedPackageFiles": [
@@ -95,10 +95,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Dell\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.3\\xunit.runner.visualstudio.2.4.3.nupkg.sha512"
   ],
   "logs": []
 }

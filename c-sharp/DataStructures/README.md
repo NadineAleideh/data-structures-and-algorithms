@@ -1,11 +1,3 @@
-# Data Structures
+# Table of contents - DataStructures
 
-## Implementation Notes
-
-## Code Challenges
-
-### Challenge 01
-
-Location: `CodeChallenges/LinkedLists`
-
-Method: `LinkedListTesting()`
+- LinkedList README [here](./LinkedListImplementation/README.md)
