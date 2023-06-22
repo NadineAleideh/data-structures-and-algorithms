@@ -1,3 +1,3 @@
 # Table of contents - DataStructures
 
-- LinkedList README [here](./LinkedListImplementation/README.md)
+- LinkedList README [here](./DataStructures/LinkedListImplementation/README.md)
