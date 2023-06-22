@@ -29,7 +29,7 @@ This challenge involves implementing a linked list data structure in C#. A linke
 
 ## Whiteboard Process
 
-![LinkedList Whiteboard](./LinkedListImplementation/CC5WB.jpg)
+![LinkedList Whiteboard](./CC5WB.jpg)
 
 
 ## Solution & Tests
@@ -67,4 +67,4 @@ Feel free to check the [LinkedList.cs](../LinkedList.cs) file for the complete i
 
 Also, Feel free to check the [LinkedListTests.cs](.../DataStructuresTestes/LinkedListTestes.cs) file for the complete Tests details.
 
-![LinkedList Tests](./LinkedListImplementation/CC5tests.PNG)
+![LinkedList Tests](./CC5tests.PNG)
