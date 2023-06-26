@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3JuLr9yRfRibC2UjB8jN9h0bF5S+FkC0EiqGPE+EaoBVM8rfEq+Gg0/7k98ffky0xrLuqflE0Zr599Z1DX1BA==",
+  "dgSpecHash": "FH3ZJ2SvunUvEh/zGYKHgPc0k7zP0MLT7VJ74jESETKafxcM4npnmOayo5F9aV3tGKNGMWJ80dpvp+P5ihpZXQ==",
   "success": true,
   "projectFilePath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\CodeChallenges.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

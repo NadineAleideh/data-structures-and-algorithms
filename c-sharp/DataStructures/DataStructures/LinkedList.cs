@@ -67,7 +67,117 @@ namespace DataStructures
       return str;
     }
 
+    // code challenge 6 starts
+
+    public void Append(int value)
+    {
+      Node newNode = new Node(value);
+
+      if (Head == null)
+      {
+        Head = newNode;
+      }
+      else
+      {
+        Node current = Head;
+        while (current.Next != null)
+        {
+          current = current.Next;
+        }
+        current.Next = newNode;
+      }
+    }
+
+    public void InsertBefore(int value, int newValue)
+    {
+      Node newNode = new Node(newValue);
+
+      if (Head == null)
+      {
+        throw new InvalidOperationException("Cannot insert before in an empty list.");
+      }
+
+      if (Head.Value == value)
+      {
+        newNode.Next = Head;
+        Head = newNode;
+      }
+      else
+      {
+        Node current = Head;
+        while (current.Next != null)
+        {
+          if (current.Next.Value == value)
+          {
+            newNode.Next = current.Next;
+            current.Next = newNode;
+            return;
+          }
+          current = current.Next;
+        }
+        throw new ArgumentException("Value not found in the list to insert before.");
+      }
+    }
+
+
+    public void InsertAfter(int value, int newValue)
+    {
+      Node newNode = new Node(newValue);
+
+      if (Head == null)
+      {
+        throw new InvalidOperationException("Cannot insert after in an empty list.");
+      }
+
+      Node current = Head;
+      while (current != null)
+      {
+        if (current.Value == value)
+        {
+          newNode.Next = current.Next;
+          current.Next = newNode;
+          return;
+        }
+        current = current.Next;
+      }
+      throw new ArgumentException("Value not found in the list to insert after.");
+    }
+
+
+    public void Delete(int value)
+    {
+      if (Head == null)
+      {
+        throw new InvalidOperationException("Cannot delete in an empty list.");
+      }
+
+      if (Head.Value == value)
+      {
+        // If the head node has the specified value, update the head to the next node
+        Head = Head.Next;
+        return;
+      }
+
+      Node current = Head;
+      Node previous = null;
+
+      while (current != null)
+      {
+        if (current.Value == value)
+        {
+          // Found the node with the specified value, update the previous node's next pointer
+          previous.Next = current.Next;
+          return;
+        }
+
+        previous = current;
+        current = current.Next;
+      }
+      throw new ArgumentException("Value not found in the list to be deleted.");
+    }
+
+
   }
 
- 
+
 }
