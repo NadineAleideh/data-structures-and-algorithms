@@ -1,3 +1,4 @@
 # Table of contents - DataStructures
 
-- LinkedList README [here](./DataStructures/LinkedListImplementation/README.md)
+- CC5 LinkedList README [here](./DataStructures/LinkedListImplementation/README.md)
+- CC6 LinkedList README [here](./DataStructures/CC6/README.md)

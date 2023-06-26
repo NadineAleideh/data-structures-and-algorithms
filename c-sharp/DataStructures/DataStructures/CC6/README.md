@@ -33,7 +33,7 @@ This code challenge focuses on implementing various operations on a singly linke
   - Time Complexity: O(n)
   - Space Complexity: O(1)
 
-- ** InsertAfter(value, new value):** adds a new node with the given new value immediately after the first node that has the specified value in the linked list.
+- **InsertAfter(value, new value):** adds a new node with the given new value immediately after the first node that has the specified value in the linked list.
   - Input: Input: The value to be inserted (integer), The specified value to insert before it (integer).
   - Output: None.
   - Approach:
