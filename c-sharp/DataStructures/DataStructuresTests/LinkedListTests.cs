@@ -77,5 +77,143 @@ namespace DataStructuresTests
       Assert.Equal(expected, result);
     }
 
+    // code challenge 6 tests starts //
+
+    [Fact]
+    public void LinkedList_Append() //Can successfully add a node to the end of the linked list
+    {
+      // Arrange
+      LinkedList linkedList = new LinkedList();
+
+      // Act
+      linkedList.Append(5);
+      // Assert
+      string expected = "{ 5 } -> NULL";
+      string result = linkedList.ToString();
+
+      Assert.Equal(expected, result);
+    }
+
+    [Fact]
+    public void LinkedList_AppendMultiple() //Can successfully add multiple nodes to the end of a linked list
+    {
+      LinkedList linkedList = new LinkedList();
+
+      linkedList.Append(5);
+      linkedList.Append(6);
+      linkedList.Append(7);
+
+      Assert.NotNull(linkedList.Head);
+      Assert.Equal(5, linkedList.Head.Value);
+      Assert.NotNull(linkedList.Head.Next);
+      Assert.Equal(6, linkedList.Head.Next.Value);
+      Assert.NotNull(linkedList.Head.Next.Next);
+      Assert.Equal(7, linkedList.Head.Next.Next.Value);
+    }
+
+    [Fact]
+    public void LinkedList_InsertBeforeMiddle() //Can successfully insert a node before a node located in the middle of a linked list
+    {
+      // Arrange
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(2);
+      linkedList.Append(4);
+      linkedList.Append(5);
+
+      // Act
+      linkedList.InsertBefore(4, 3);
+
+      // Assert
+      string expected = "{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> NULL";
+      string result = linkedList.ToString();
+
+      Assert.Equal(expected, result);
+    }
+
+    [Fact]
+    public void LinkedList_InsertBeforeFirst() //Can successfully insert a node before the first node of a linked list
+    {
+      // Arrange
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(2);
+      linkedList.Append(3);
+      linkedList.Append(4);
+      linkedList.Append(5);
+
+      // Act
+      linkedList.InsertBefore(1, 0);
+
+      // Assert
+      string expected = "{ 0 } -> { 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> NULL";
+      string result = linkedList.ToString();
+
+      Assert.Equal(expected, result);
+    }
+
+    [Fact]
+    public void LinkedList_InsertAfterMiddle() //Can successfully insert after a node in the middle of the linked list
+    {
+      // Arrange
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(2);
+      linkedList.Append(3);
+      linkedList.Append(5);
+
+      // Act
+      linkedList.InsertAfter(3, 4);
+
+      // Assert
+      string expected = "{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> NULL";
+      string result = linkedList.ToString();
+
+      Assert.Equal(expected, result);
+    }
+
+    [Fact]
+    public void LinkedList_InsertAfterLast() //Can successfully insert a node after the last node of the linked list
+    {
+      // Arrange
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(2);
+      linkedList.Append(3);
+      linkedList.Append(4);
+
+      // Act
+      linkedList.InsertAfter(4, 5);
+
+      // Assert
+      string expected = "{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> NULL";
+      string result = linkedList.ToString();
+
+      Assert.Equal(expected, result);
+    }
+
+    [Fact]
+    public void LinkedList_Delete() // test delete
+    {
+      // Arrange
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(3);
+      linkedList.Append(2);
+      linkedList.Append(5);
+
+      // Act
+      linkedList.Delete(3);
+
+      // Assert
+      Assert.NotNull(linkedList.Head);
+      Assert.Equal(1, linkedList.Head.Value);
+      Assert.NotNull(linkedList.Head.Next);
+      Assert.Equal(2, linkedList.Head.Next.Value);
+      Assert.NotNull(linkedList.Head.Next.Next);
+      Assert.Equal(5, linkedList.Head.Next.Next.Value);
+      Assert.Null(linkedList.Head.Next.Next.Next);
+    }
+
   }
 }
