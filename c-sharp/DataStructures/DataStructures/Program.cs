@@ -30,6 +30,16 @@ namespace DataStructures
       bool containsValue10 = linkedList.IsIncludes(10);
       Console.WriteLine($"Contains value 2: {containsValue2}");
       Console.WriteLine($"Contains value 10: {containsValue10}");
+        
+
+        for (int i =0; i< 7; i++)
+        {
+          Console.WriteLine($"{i}th value from end: {linkedList.KthValueFromEnd(i)}");
+        }
+
+        Console.WriteLine($"-4th value from end: {linkedList.KthValueFromEnd(-4)}");
+       //Console.WriteLine($"7th value from end: {linkedList.KthValueFromEnd(7)}");
+       //Console.WriteLine($"10th value from end: {linkedList.KthValueFromEnd(10)}");
 
       }
       catch(InvalidOperationException ex)
@@ -41,6 +51,7 @@ namespace DataStructures
       {
         Console.WriteLine($"ArgumentException: {ex.Message}");
       }
+
       finally
       {
         Console.WriteLine("Program done");

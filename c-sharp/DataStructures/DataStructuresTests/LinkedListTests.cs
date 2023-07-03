@@ -215,5 +215,66 @@ namespace DataStructuresTests
       Assert.Null(linkedList.Head.Next.Next.Next);
     }
 
+    ///////////////////////////////////////////////////////////////////////////CC7 Tests/////////////////////////////////////////////////////////////////////////
+   
+    [Fact]
+    public void KthValueFromEnd_WhenKExceedsLength() //Where k is greater than the length of the linked list
+    {
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(3);
+      linkedList.Append(8);
+      linkedList.Append(2);
+
+      Assert.Throws<ArgumentException>(() => linkedList.KthValueFromEnd(6));
+    }
+
+    [Fact]
+    public void KthValueFromEnd_WhenKEqulasLinkedListSize() //Where k and the length of the list are the same
+    {
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(3);
+      linkedList.Append(8);
+      linkedList.Append(2);
+
+      Assert.Throws<ArgumentException>(() => linkedList.KthValueFromEnd(4));
+    }
+
+    [Fact]
+    public void KthValueFromEnd_WhenKIsNegative() //Where k is not a positive integer
+    {
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(3);
+      linkedList.Append(8);
+      linkedList.Append(2);
+
+      Assert.Throws<ArgumentException>(() => linkedList.KthValueFromEnd(-1));
+    }
+
+    [Fact]
+    public void KthValueFromEnd_WhenLinkedListSizeIs1() //Where the linked list is of a size 1
+    {
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(5);
+
+      Assert.Equal(5, linkedList.KthValueFromEnd(0));
+    }
+
+    [Fact]
+    public void KthValueFromEnd() //“Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+    {
+      LinkedList linkedList = new LinkedList();
+      linkedList.Append(1);
+      linkedList.Append(3);
+      linkedList.Append(8);
+      linkedList.Append(2);
+
+      Assert.Equal(2, linkedList.KthValueFromEnd(0));
+      Assert.Equal(3, linkedList.KthValueFromEnd(2));
+    }
+
+
   }
 }
