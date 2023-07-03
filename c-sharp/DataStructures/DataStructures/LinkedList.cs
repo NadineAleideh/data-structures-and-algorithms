@@ -177,6 +177,46 @@ namespace DataStructures
     }
 
 
+    public int KthValueFromEnd(int k)
+    {
+      if (k < 0)
+      {
+        throw new ArgumentException($"k {k} must be a non-negative integer.");
+      }
+
+      Node P1 = Head;
+      Node P2 = Head;
+      
+
+      // Move the P1 pointer k nodes ahead of the P2 pointer
+      for (int i = 0; i < k; i++)
+      {
+        if (P1 == null)
+        {
+          throw new ArgumentException($"k {k} exceeds the length of the linked list.");
+        }
+        P1 = P1.Next;
+
+        if (P1 == null)
+        {
+          throw new ArgumentException($"k {k} cannot be the same as the length of the linked list.");
+        }
+      }
+
+      // Move both pointers until the P1 pointer reaches the end
+      
+      while (P1.Next != null)
+      {
+       
+        P2 = P2.Next;
+        P1 = P1.Next;
+      }
+
+      return P2.Value;
+    }
+
+
+
   }
 
 
