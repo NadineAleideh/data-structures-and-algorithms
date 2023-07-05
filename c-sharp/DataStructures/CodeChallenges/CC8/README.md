@@ -30,7 +30,7 @@ This code challenge focuses on linking two linked lists and merges them together
 
 ## Solution & Tests
 
-- The code for the linked list implementation can be found in the [Node.cs](../../DataStructuresTests/Node.cs) and [LinkedList.cs](../../DataStructuresTests/LinkedList.cs) files.
+- The code for the linked list implementation can be found in the [Node.cs](../../DataStructures/Node.cs) and [LinkedList.cs](../../DataStructures/LinkedList.cs) files.
 - The code for the **ZipLists** function can be found in the [LinkedLists.cs](../LinkedLists.cs) files.
 - To run the code, you can follow the example written in the Main method in the [Program.cs](../Program.cs) file:
 
