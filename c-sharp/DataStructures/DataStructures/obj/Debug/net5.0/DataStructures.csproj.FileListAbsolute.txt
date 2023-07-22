@@ -1,0 +1,16 @@
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\bin\Debug\net5.0\DataStructures.exe
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\bin\Debug\net5.0\DataStructures.deps.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\bin\Debug\net5.0\DataStructures.runtimeconfig.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\bin\Debug\net5.0\DataStructures.runtimeconfig.dev.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\bin\Debug\net5.0\DataStructures.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\bin\Debug\net5.0\DataStructures.pdb
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.csproj.AssemblyReference.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.AssemblyInfoInputs.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.AssemblyInfo.cs
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.csproj.CoreCompileInputs.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\refint\DataStructures.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.pdb
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\DataStructures.genruntimeconfig.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\obj\Debug\net5.0\ref\DataStructures.dll

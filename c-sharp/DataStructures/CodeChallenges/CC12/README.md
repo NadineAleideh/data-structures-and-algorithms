@@ -1,68 +1,102 @@
-# AnimalShelter Implementation
+# Bracket Validation
 
-This challenge involves creating an `AnimalShelter` class that holds only dogs and cats and operates using a first-in, first-out approach. The class implements the `enqueue` and `dequeue` methods.
+The challenge is to validate whether the brackets in a given input string are balanced or not. Brackets are considered balanced if each opening bracket has a corresponding closing bracket in the correct order.
 
 ## Whiteboard Process
-![Whiteboard](./CC12.jpg)
+![Whiteboard](./CC13WB.jpg)
 
 ## Approach & Efficiency
-The `AnimalShelter` class uses two separate queues, one for dogs and one for cats, to implement the first-in, first-out approach.
 
-**Enqueue Method**: adds a new animal to the animal shelter. The animal can be either a dog or a cat and must have a species property that is either "dog" or "cat" and a name property that is a string.
-- Input: Animal animal; An Animal object representing the animal to be enqueued. The Animal class has two properties: Species and Name.
-- Output:None
-- Algorithm:
-  - check the species property of the animal object.
-  - If the species is "dog", it enqueues the animal into the dogs queue.
-  - If the species is "cat", it enqueues the animal into the cats queue.
-  - If the species is neither "dog" nor "cat", it throws an ArgumentException with the message "Invalid species. Only 'dog' or 'cat' is allowed."
-- The time complexity is constant time O(1).
-- The space complexity is constant time O(1).
+**ValidateBrackets(string str) Method**: validate whether the brackets in a given input string are balanced or not.
 
-**Dequeue Method**: extracts and returns an animal from the animal shelter based on the given preference ("dog" or "cat"). If the preference is not "dog" or "cat", it returns null.
-- Input: string pref: A string representing the preference for the animal to be dequeued. It can be either "dog" or "cat".
-- Output: Animal: The dequeued Animal object based on the preference. If the preference is not "dog" or "cat", it returns null.
+- Input: String
+- Output: Boolean, representing whether or not the brackets in the string are balanced.
+
 - Algorithm:
-  - check the value of the pref argument.
-  - If pref is equal to "dog", it dequeues an animal from the dogs queue (if it's not empty) and returns it.
-  - If pref is equal to "cat", it dequeues an animal from the cats queue (if it's not empty) and returns it.
-  - If pref is neither "dog" nor "cat", it returns null.
-- The time complexity is constant time O(1).
-- The space complexity is constant time O(1).
+  1. Create an empty stack to store the opening brackets encountered.
+  2. Iterate through each character c in the input string str.
+  3. If c is an opening bracket , push it onto the stack to keep track of it.
+  4. If c is a closing bracket :
+    - Check if the stack is empty. If it is, or the current closing bracket c does not match the last opening bracket in the stack, return false because the brackets are not balanced.
+    - If the closing bracket c matches the last opening bracket in the stack, pop the last opening bracket from the stack.
+  5. After processing all characters in the input str, check if the stack is empty:
+    - If it is empty, all opening brackets have been closed properly, so return true indicating that the brackets are balanced.
+    - If it is not empty, there are opening brackets without a matching closing bracket, so return false indicating that the brackets are not balanced.
+
+- The time complexity is O(n), where n is the length of the input string, because we iterate through each character in the input string once.
+- The space complexity is O(n),where n is the number of opening brackets in the input string, because we uses a stack to store the opening brackets, and in the worst case, it may need to store all the opening brackets if there are no matching closing brackets.
+
+
 
 
 ## Solution
 
-![solution](./CC12sol1.PNG)
-![solution](./CC12sol2.PNG)
-![solution](./CC12sol3.PNG)
+```
+public class BracketsValidation
+  {
+    public Stack<char> stack = new Stack<char>();
+
+    public BracketsValidation()
+    {
+      stack = new Stack<char>();
+    }
+    public bool ValidateBrackets(string str)
+    {
+      Stack<char>? chars = new Stack<char>();
+      foreach (char c in str)
+      {
+        if (c == '(' || c == '{' || c == '[')
+        {
+          chars.Push(c);
+        }
+        else if (c == ')' || c == '}' || c == ']')
+        {
+          if (chars.IsStackEmpty() || !ArePair(chars.Top.Value, c))
+          {
+            return false;
+          }
+          else
+          {
+            chars.Pop();
+          }
+        }
+      }
+      return chars.IsStackEmpty() ? true : false;
+    }
+    public bool ArePair(char open, char close)
+    {
+      if (open == '(' && close == ')') { return true; }
+      else if (open == '{' && close == '}') { return true; }
+      else if (open == '[' && close == ']') { return true; }
+      return false;
+    }
+  }
+
+```
 
 ## How to use
 
 To use the `AnimalShelter` implementation, follow these steps:
 
-1. Instantiate an `AnimalShelter` object: `AnimalShelter shelter = new AnimalShelter();`
-2. Enqueue dogs and cats using the `Enqueue` method: `shelter.Enqueue(new Animal("dog", "Buddy"));`
-3. Dequeue specific preferences (dog or cat) using the `Dequeue` method: `Animal dog = shelter.Dequeue("dog");`
-4. Dequeue any animal in the shelter using the `DequeueAny` method: `Animal anyAnimal = shelter.DequeueAny();`
+1. Create an instance of the BracketsValidation class.
+2. Call the ValidateBrackets method with the input string as an argument.
+3. Display the result.
 
-Here's an example of how to use the `AnimalShelter`:
+Here's an example of how to use it:
 
 ```
-AnimalShelter shelter = new AnimalShelter();
+BracketsValidation bracketsValidation = new BracketsValidation();
 
-shelter.Enqueue(new Animal("dog", "Buddy"));
-shelter.Enqueue(new Animal("cat", "Whiskers"));
-shelter.Enqueue(new Animal("dog", "Max"));
-shelter.Enqueue(new Animal("cat", "Fluffy"));
+string example1 = "{}(){}";
+string example2 = "()[[Extra Characters]]";
+string example3 = "[({}]";
 
-Animal dog = shelter.Dequeue("dog");
-Animal cat = shelter.Dequeue("cat");
-Animal anyAnimal = shelter.DequeueAny();
+Console.WriteLine("Example 1: {}(){} Returns: " + bracketsValidation.ValidateBrackets(example1)); // Output: True
+Console.WriteLine("Example 2: ()[[Extra Characters]] Returns: " + bracketsValidation.ValidateBrackets(example2)); // Output: True
+Console.WriteLine("Example 3: [({}] Returns: " + bracketsValidation.ValidateBrackets(example3)); // Output: False
 ```
 
-This example demonstrates enqueuing dogs and cats into the `AnimalShelter` and dequeuing specific preferences as well as any animal from the shelter.
 
-Feel free to check the [AnimalShelterTests.cs](../../DataStructuresTests/AnimalShelterTests.cs) file for the complete Tests details.
+Feel free to check the [The Tests](../../DataStructures/CC13/CC13Test/UnitTest1.cs) file for the complete Tests details.
 
-![cc12Tests](./CC12test.PNG)
+![cc13Tests](./CC13tests.PNGCC12test.PNG)
