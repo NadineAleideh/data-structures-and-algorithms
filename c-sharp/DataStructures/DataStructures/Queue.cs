@@ -17,7 +17,7 @@ namespace DataStructures
       return Front == null && Back == null;
     }
 
-    public void Enqueue (int value)
+    public void Enqueue(int value)
     {
       Node NewNode = new Node(value);
 
@@ -48,7 +48,7 @@ namespace DataStructures
       return value;
     }
 
-    public int Peek ()
+    public int Peek()
     {
       if (IsQueueEmpty())
       {

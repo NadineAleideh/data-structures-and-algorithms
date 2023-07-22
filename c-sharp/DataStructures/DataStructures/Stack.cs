@@ -21,12 +21,12 @@ namespace DataStructures
       Node NewNode = new Node(value);
 
       if (Top == null)
-      { 
-        Top= NewNode;
+      {
+        Top = NewNode;
       }
       else
       {
-       
+
         NewNode.Next = Top;
         Top = NewNode;
       }
@@ -40,9 +40,9 @@ namespace DataStructures
 
       int value;
       value = Top.Value;
-      Top= Top.Next;
+      Top = Top.Next;
 
-     return value;
+      return value;
     }
 
     public int Peek()
