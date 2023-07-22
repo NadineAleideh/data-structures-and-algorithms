@@ -99,4 +99,4 @@ Console.WriteLine("Example 3: [({}] Returns: " + bracketsValidation.ValidateBrac
 
 Feel free to check the [The Tests](../../DataStructures/CC13/CC13Test/UnitTest1.cs) file for the complete Tests details.
 
-![cc13Tests](./CC13tests.PNGCC12test.PNG)
+![cc13Tests](./CC13tests.PNG)
