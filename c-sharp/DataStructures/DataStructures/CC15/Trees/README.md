@@ -1,4 +1,4 @@
-# Binary Search Tree
+# CC15: Binary Search Tree
 
 This challenge involves implementing a Binary Search Tree (BST) data structure as a subclass of the Binary Tree class. The BST should have methods to add nodes in the correct location and check if a given value exists in the tree.
 
@@ -177,4 +177,8 @@ List<int> inOrder = tree.InOrderTraversal();   // [3, 5, 7]
 List<int> postOrder = tree.PostOrderTraversal(); // [3, 7, 5]
 ```
 
+## Tests
 
+Go to [UnitTest1.cs](./TreeTests/UnitTest1.cs) to check the tests.
+
+![tests](./assets/CC15tests.PNG)
