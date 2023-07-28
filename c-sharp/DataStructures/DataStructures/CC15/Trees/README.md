@@ -179,6 +179,6 @@ List<int> postOrder = tree.PostOrderTraversal(); // [3, 7, 5]
 
 ## Tests
 
-Go to [UnitTest1.cs](./TreeTests/UnitTest1.cs) to check the tests.
+Go to [UnitTest1.cs](../TreeTests/UnitTest1.cs) to check the tests.
 
 ![tests](./assets/CC15tests.PNG)
