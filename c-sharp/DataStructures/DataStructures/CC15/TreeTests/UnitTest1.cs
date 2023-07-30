@@ -102,6 +102,94 @@ namespace TreeTests
 
       Assert.False(tree.Contains(6));
     }
+
+    ////////// CC16
+
+    [Fact]
+    public void Test_EmptyTree()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+
+      // Assert that trying to find the max value in an empty tree throws an exception
+      Assert.Throws<InvalidOperationException>(() => tree.FindMaxValue());
+    }
+
+    [Fact]
+    public void Test_SingleNodeTree()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      tree.Add(5);
+
+      // The tree only has one node with value 5, which should be the maximum value
+      int max = tree.FindMaxValue();
+      Assert.Equal(5, max);
+    }
+
+    [Fact]
+    public void Test_LeftSkewedTree()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      tree.Add(8);
+      tree.Add(7);
+      tree.Add(6);
+      tree.Add(5);
+      tree.Add(4);
+
+      // The left-skewed tree has the maximum value 8 at the root
+      int max = tree.FindMaxValue();
+      Assert.Equal(8, max);
+    }
+
+    [Fact]
+    public void Test_RightSkewedTree()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      tree.Add(1);
+      tree.Add(2);
+      tree.Add(3);
+      tree.Add(4);
+      tree.Add(5);
+
+      // The right-skewed tree has the maximum value 5 at the rightmost node
+      int max = tree.FindMaxValue();
+      Assert.Equal(5, max);
+    }
+
+    [Fact]
+    public void Test_BalancedTree()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      tree.Add(4);
+      tree.Add(2);
+      tree.Add(6);
+      tree.Add(1);
+      tree.Add(3);
+      tree.Add(5);
+      tree.Add(7);
+
+      // The balanced tree has the maximum value 7 at the rightmost node
+      int max = tree.FindMaxValue();
+      Assert.Equal(7, max);
+    }
+
+    [Fact]
+    public void Test_CustomTree()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      tree.Add(7);
+      tree.Add(3);
+      tree.Add(9);
+      tree.Add(1);
+      tree.Add(5);
+      tree.Add(8);
+      tree.Add(10);
+      tree.Add(2);
+      tree.Add(11);
+
+      // The custom tree has the maximum value 11 at the rightmost node
+      int max = tree.FindMaxValue();
+      Assert.Equal(11, max);
+    }
   }
 }
 
