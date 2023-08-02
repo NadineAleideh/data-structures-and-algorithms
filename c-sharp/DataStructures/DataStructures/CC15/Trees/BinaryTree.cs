@@ -15,6 +15,8 @@ namespace Trees
       Root = null;
     }
 
+    //CC15
+    // DFT PreOrder
     public List<T> PreOrderTraversal()
     {
       List<T> result = new List<T>();
@@ -32,6 +34,8 @@ namespace Trees
       }
     }
 
+
+    // DFT InOrder
     public List<T> InOrderTraversal()
     {
       List<T> result = new List<T>();
@@ -49,6 +53,7 @@ namespace Trees
       }
     }
 
+    // DFT PostOrder
     public List<T> PostOrderTraversal()
     {
       List<T> result = new List<T>();
@@ -102,6 +107,7 @@ namespace Trees
 
       return maxValue;
     }
+
 
   }
 
