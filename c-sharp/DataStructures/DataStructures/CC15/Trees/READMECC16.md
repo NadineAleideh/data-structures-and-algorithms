@@ -1,19 +1,26 @@
 # CC16 Binary Search Tree: Find Maximum Value
 
-This challenge requier implementing the FindMaxValue method for a Binary Search Tree (BST) data structure. The method should find and return the maximum value stored in the binary search tree.
+This challenge requier implementing the FindMaxValue method for a Binary Tree data structure. The method should find and return the maximum value stored in the binary tree.
 
 - Inputs : None.
-- Outputs: The maximum value found in the binary search tree(integer).
+- Outputs: The maximum value found in the binary tree(integer).
 
 ## Approach & Efficiency
 
-- By using the In-Order traversal of the binary search tree and keep traversing to the right until we reach the rightmost node, which holds the maximum value.
-- Start with the root node as the current node.
-- While the current node has a right child, update the current node to be its right child (i.e., traverse to the right).
-- When the current node does not have a right child, return its value as the maximum value.
+1. By using the Pre-Order traversal of the binary tree we can visit every node in the binary tree, and by comparing the values during traversal, we can accurately identify the maximum value.
+2.  Initialize a variable maxValue with a very small value (negative infinity).
+3. Call the FindMaxValue function, passing the root node of the binary tree.
+4. In the FindMaxValue function:
+   - If the input node is null, return maxValue. This handles the base case.
+   - Compare the value of the current node with the maxValue. If the current node's value is greater than maxValue, update maxValue with the 
+     current node's value.
+   - Recursively call FindMaxValue on the left child of the current node.
+   - Recursively call FindMaxValue on the right child of the current node.
+5. After the FindMaxValue function returns, the maxValue variable will hold the maximum value in the binary tree.
 
-Time Complexity: O(n) (where n is the number of nodes in the tree)
-Space Complexity:  O(h) due to the recursive nature of the function.
+- Time Complexity: O(n), where n is the number of nodes in the binary tree, as we visit each node once.
+- Space Complexity: O(h), due to the recursive nature of the traversal, where h is the height of the binary tree.
+
 
 
 ## Whiteboard Process
