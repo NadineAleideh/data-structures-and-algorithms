@@ -1,4 +1,4 @@
-# CC16 Binary Search Tree: Find Maximum Value
+# CC16 Find Maximum Value Binary Tree
 
 This challenge requier implementing the FindMaxValue method for a Binary Tree data structure. The method should find and return the maximum value stored in the binary tree.
 
