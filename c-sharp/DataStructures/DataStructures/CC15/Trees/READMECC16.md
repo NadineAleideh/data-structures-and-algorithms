@@ -91,8 +91,8 @@ public class BinaryTree<T>
 ## How to use
 To use the Binary Search Tree, follow these steps:
 
-1. Instantiate a new instance of the BinarySearchTree class: `BinarySearchTree<int> tree = new BinarySearchTree<int>();`
-2. Add nodes using the Add method
+1. Instantiate a new instance of the BinarySearchTree class: `BinaryTree<int> tree = new BinaryTree<int>();`
+2. Add nodes
 3. Then call the FindMaxValue method to find the maximum value.
 
 Example:
