@@ -50,106 +50,39 @@ public class BinaryTree<T>
       Root = null;
     }
 
-    public List<T> PreOrderTraversal()
-    {
-      List<T> result = new List<T>();
-      PreOrderTraversal(Root!, result);
-      return result;
-    }
-
-    private void PreOrderTraversal(Node<T> node, List<T> result)
-    {
-      if (node != null)
-      {
-        result.Add(node.Value);
-        PreOrderTraversal(node.Left!, result);
-        PreOrderTraversal(node.Right!, result);
-      }
-    }
-
-    public List<T> InOrderTraversal()
-    {
-      List<T> result = new List<T>();
-      InOrderTraversal(Root!, result);
-      return result;
-    }
-
-    private void InOrderTraversal(Node<T> node, List<T> result)
-    {
-      if (node != null)
-      {
-        InOrderTraversal(node.Left!, result);
-        result.Add(node.Value);
-        InOrderTraversal(node.Right!, result);
-      }
-    }
-
-    public List<T> PostOrderTraversal()
-    {
-      List<T> result = new List<T>();
-      PostOrderTraversal(Root!, result);
-      return result;
-    }
-
-    private void PostOrderTraversal(Node<T> node, List<T> result)
-    {
-      if (node != null)
-      {
-        PostOrderTraversal(node.Left!, result);
-        PostOrderTraversal(node.Right!, result);
-        result.Add(node.Value);
-      }
-    }
-
-  }
-
-```
-
-```
-public class BinarySearchTree<T> : BinaryTree<T> where T : IComparable<T>
-  {
-    public void Add(T value)
-    {
-      Root = Add(Root!, value);
-    }
-
-    private Node<T> Add(Node<T> node, T value)
-    {
-      if (node == null)
-        return new Node<T>(value);
-
-      int compareResult = value.CompareTo(node.Value);
-
-      if (compareResult < 0)
-      {
-        node.Left = Add(node.Left!, value);
-      }
-      else if (compareResult > 0)
-      {
-        node.Right = Add(node.Right!, value);
-      }
-
-      return node;
-    }
-
     public T FindMaxValue()
     {
       if (Root == null)
       {
         throw new InvalidOperationException("Tree is empty!");
       }
+
       return FindMaxValue(Root);
     }
 
     private T FindMaxValue(Node<T> node)
     {
+      T maxValue = node.Value;
 
-      while (node.Right != null)
+      if (node.Left != null)
       {
-        return FindMaxValue(node.Right);
+        T leftMax = FindMaxValue(node.Left);
+        if (Comparer<T>.Default.Compare(leftMax, maxValue) > 0)
+        {
+          maxValue = leftMax;
+        }
       }
 
-      return node.Value;
+      if (node.Right != null)
+      {
+        T rightMax = FindMaxValue(node.Right);
+        if (Comparer<T>.Default.Compare(rightMax, maxValue) > 0)
+        {
+          maxValue = rightMax;
+        }
+      }
+
+      return maxValue;
     }
   }
 
@@ -165,14 +98,15 @@ To use the Binary Search Tree, follow these steps:
 Example:
 
 ```
-BinarySearchTree<int> tree = new BinarySearchTree<int>();
-tree.Add(5);
-tree.Add(3);
-tree.Add(7);
-tree.Add(8);
-tree.Add(4);
+BinaryTree<int> tree = new BinaryTree<int>();
+tree.Root = new Node<int>(10);
+tree.Root.Left = new Node<int>(5);
+tree.Root.Right = new Node<int>(20);
+tree.Root.Left.Left = new Node<int>(3);
+tree.Root.Left.Right = new Node<int>(8);
+
 int max = tree.FindMaxValue();
-Console.WriteLine("Maximum number in the binary search tree: " + max);
+Console.WriteLine("Maximum value in the binary tree: " + max);
 ```
 
 ## Tests

@@ -6,15 +6,15 @@ namespace Trees
   {
     public static void Main(string[] args)
     {
+      BinaryTree<int> tree = new BinaryTree<int>();
+      tree.Root = new Node<int>(10);
+      tree.Root.Left = new Node<int>(5);
+      tree.Root.Right = new Node<int>(20);
+      tree.Root.Left.Left = new Node<int>(3);
+      tree.Root.Left.Right = new Node<int>(8);
 
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
-      tree.Add(5);
-      tree.Add(3);
-      tree.Add(7);
-      tree.Add(8);
-      tree.Add(4);
       int max = tree.FindMaxValue();
-      Console.WriteLine("Maximum number in the binary tree: " + max);
+      Console.WriteLine("Maximum value in the binary tree: " + max);
     }
   }
 }

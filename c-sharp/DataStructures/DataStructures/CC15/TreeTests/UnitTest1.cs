@@ -108,7 +108,7 @@ namespace TreeTests
     [Fact]
     public void Test_EmptyTree()
     {
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      BinaryTree<int> tree = new BinaryTree<int>();
 
       // Assert that trying to find the max value in an empty tree throws an exception
       Assert.Throws<InvalidOperationException>(() => tree.FindMaxValue());
@@ -117,8 +117,8 @@ namespace TreeTests
     [Fact]
     public void Test_SingleNodeTree()
     {
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
-      tree.Add(5);
+      BinaryTree<int> tree = new BinaryTree<int>();
+      tree.Root = new Node<int>(5);
 
       // The tree only has one node with value 5, which should be the maximum value
       int max = tree.FindMaxValue();
@@ -128,12 +128,12 @@ namespace TreeTests
     [Fact]
     public void Test_LeftSkewedTree()
     {
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
-      tree.Add(8);
-      tree.Add(7);
-      tree.Add(6);
-      tree.Add(5);
-      tree.Add(4);
+      BinaryTree<int> tree = new BinaryTree<int>();
+      tree.Root = new Node<int>(8);
+      tree.Root.Left = new Node<int>(7);
+      tree.Root.Left.Left = new Node<int>(6);
+      tree.Root.Left.Left.Left = new Node<int>(5);
+      tree.Root.Left.Left.Left.Left = new Node<int>(4);
 
       // The left-skewed tree has the maximum value 8 at the root
       int max = tree.FindMaxValue();
@@ -143,12 +143,12 @@ namespace TreeTests
     [Fact]
     public void Test_RightSkewedTree()
     {
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
-      tree.Add(1);
-      tree.Add(2);
-      tree.Add(3);
-      tree.Add(4);
-      tree.Add(5);
+      BinaryTree<int> tree = new BinaryTree<int>();
+      tree.Root = new Node<int>(1);
+      tree.Root.Right = new Node<int>(2);
+      tree.Root.Right.Right = new Node<int>(3);
+      tree.Root.Right.Right.Right = new Node<int>(4);
+      tree.Root.Right.Right.Right.Right = new Node<int>(5);
 
       // The right-skewed tree has the maximum value 5 at the rightmost node
       int max = tree.FindMaxValue();
@@ -158,14 +158,14 @@ namespace TreeTests
     [Fact]
     public void Test_BalancedTree()
     {
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
-      tree.Add(4);
-      tree.Add(2);
-      tree.Add(6);
-      tree.Add(1);
-      tree.Add(3);
-      tree.Add(5);
-      tree.Add(7);
+      BinaryTree<int> tree = new BinaryTree<int>();
+      tree.Root = new Node<int>(4);
+      tree.Root.Left = new Node<int>(2);
+      tree.Root.Right = new Node<int>(6);
+      tree.Root.Left.Left = new Node<int>(1);
+      tree.Root.Left.Right = new Node<int>(3);
+      tree.Root.Right.Left = new Node<int>(5);
+      tree.Root.Right.Right = new Node<int>(7);
 
       // The balanced tree has the maximum value 7 at the rightmost node
       int max = tree.FindMaxValue();
@@ -175,16 +175,16 @@ namespace TreeTests
     [Fact]
     public void Test_CustomTree()
     {
-      BinarySearchTree<int> tree = new BinarySearchTree<int>();
-      tree.Add(7);
-      tree.Add(3);
-      tree.Add(9);
-      tree.Add(1);
-      tree.Add(5);
-      tree.Add(8);
-      tree.Add(10);
-      tree.Add(2);
-      tree.Add(11);
+      BinaryTree<int> tree = new BinaryTree<int>();
+      tree.Root = new Node<int>(7);
+      tree.Root.Left = new Node<int>(3);
+      tree.Root.Right = new Node<int>(9);
+      tree.Root.Left.Left = new Node<int>(1);
+      tree.Root.Left.Right = new Node<int>(5);
+      tree.Root.Right.Left = new Node<int>(8);
+      tree.Root.Right.Right = new Node<int>(10);
+      tree.Root.Left.Left.Right = new Node<int>(2);
+      tree.Root.Right.Right.Right = new Node<int>(11);
 
       // The custom tree has the maximum value 11 at the rightmost node
       int max = tree.FindMaxValue();

@@ -66,5 +66,44 @@ namespace Trees
       }
     }
 
+
+    //CC16
+    public T FindMaxValue()
+    {
+      if (Root == null)
+      {
+        throw new InvalidOperationException("Tree is empty!");
+      }
+
+      return FindMaxValue(Root);
+    }
+
+    private T FindMaxValue(Node<T> node)
+    {
+      T maxValue = node.Value;
+
+      if (node.Left != null)
+      {
+        T leftMax = FindMaxValue(node.Left);
+        if (Comparer<T>.Default.Compare(leftMax, maxValue) > 0)
+        {
+          maxValue = leftMax;
+        }
+      }
+
+      if (node.Right != null)
+      {
+        T rightMax = FindMaxValue(node.Right);
+        if (Comparer<T>.Default.Compare(rightMax, maxValue) > 0)
+        {
+          maxValue = rightMax;
+        }
+      }
+
+      return maxValue;
+    }
+
   }
+
 }
+
