@@ -4,7 +4,7 @@ namespace TreeTests
 {
   public class UnitTest1
   {
-
+    //CC16
     //[Fact]
     //public void Test_InstantiateEmptyTree() //Can successfully instantiate an empty tree
     //{
@@ -191,48 +191,116 @@ namespace TreeTests
     //  Assert.Equal(11, max);
     //}
 
-    [Fact]
-    public void Test_BreadthFirst_EmptyTree()
-    {
-      BinaryTree<int> tree = new BinaryTree<int>();
-      BridthFirstClass bridthFirstClass = new BridthFirstClass();
 
-      Assert.Throws<InvalidOperationException>(() => bridthFirstClass.BreadthFirst(tree));
+    ////CC17
+    //[Fact]
+    //public void Test_BreadthFirst_EmptyTree()
+    //{
+    //  BinaryTree<int> tree = new BinaryTree<int>();
+    //  BridthFirstClass bridthFirstClass = new BridthFirstClass();
+
+    //  Assert.Throws<InvalidOperationException>(() => bridthFirstClass.BreadthFirst(tree));
+    //}
+
+    //[Fact]
+    //public void Test_BreadthFirst_SingleNodeTree()
+    //{
+    //  BridthFirstClass bridthFirstClass = new BridthFirstClass();
+    //  BinaryTree<int> tree = new BinaryTree<int>();
+    //  tree.Root = new Node<int>(5);
+
+
+    //  List<int> result = bridthFirstClass.BreadthFirst(tree);
+    //  Assert.Single(result);
+    //  Assert.Equal(5, result[0]);
+    //}
+
+    //[Fact]
+    //public void Test_BreadthFirst_MultiLevelTree()
+    //{
+    //  BridthFirstClass bridthFirstClass = new BridthFirstClass();
+    //  BinaryTree<int> tree = new BinaryTree<int>();
+    //  tree.Root = new Node<int>(1);
+    //  tree.Root.Left = new Node<int>(2);
+    //  tree.Root.Right = new Node<int>(3);
+    //  tree.Root.Left.Left = new Node<int>(4);
+    //  tree.Root.Left.Right = new Node<int>(5);
+    //  tree.Root.Right.Left = new Node<int>(6);
+    //  tree.Root.Right.Right = new Node<int>(7);
+
+    //  // The expected breadth-first traversal result: 1, 2, 3, 4, 5, 6, 7
+    //  List<int> expected = new List<int> { 1, 2, 3, 4, 5, 6, 7 };
+
+    //  List<int> result = bridthFirstClass.BreadthFirst(tree);
+
+    //  Assert.Equal(expected, result);
+    //}
+
+
+    //CC18
+    [Fact]
+    public void Test_FizzBuzzTree_EmptyTree()
+    {
+      FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
+      KaryTree<int> emptyTree = new KaryTree<int>();
+
+      // Assert that trying to perform FizzBuzz transformation on an empty tree throws an exception
+      Assert.Throws<InvalidOperationException>(() => fizzBuzzTreeClass.FizzBuzzTree(emptyTree));
     }
 
     [Fact]
-    public void Test_BreadthFirst_SingleNodeTree()
+    public void Test_FizzBuzzTree_SingleNodeTree()
     {
-      BridthFirstClass bridthFirstClass = new BridthFirstClass();
-      BinaryTree<int> tree = new BinaryTree<int>();
-      tree.Root = new Node<int>(5);
+      FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
+      KaryTree<int> singleNodeTree = new KaryTree<int>();
+      singleNodeTree.Root = new TreeNode<int>(15);
 
+      // The tree only has one node with value 15, which should be transformed to "FizzBuzz"
+      KaryTree<string> resultTree = fizzBuzzTreeClass.FizzBuzzTree(singleNodeTree);
 
-      List<int> result = bridthFirstClass.BreadthFirst(tree);
-      Assert.Single(result);
-      Assert.Equal(5, result[0]);
+      // Verify the transformed value of the root node in the result tree
+      Assert.Equal("FizzBuzz", resultTree.Root.Value);
     }
 
     [Fact]
-    public void Test_BreadthFirst_MultiLevelTree()
+    public void Test_FizzBuzzTree_MultiLevelTree()
     {
-      BridthFirstClass bridthFirstClass = new BridthFirstClass();
-      BinaryTree<int> tree = new BinaryTree<int>();
-      tree.Root = new Node<int>(1);
-      tree.Root.Left = new Node<int>(2);
-      tree.Root.Right = new Node<int>(3);
-      tree.Root.Left.Left = new Node<int>(4);
-      tree.Root.Left.Right = new Node<int>(5);
-      tree.Root.Right.Left = new Node<int>(6);
-      tree.Root.Right.Right = new Node<int>(7);
+      FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
+      KaryTree<int> multiLevelTree = new KaryTree<int>();
+      multiLevelTree.Root = new TreeNode<int>(10);
+      var root = multiLevelTree.Root;
+      root.Children.Add(new TreeNode<int>(9));
+      root.Children.Add(new TreeNode<int>(12));
+      root.Children[0].Children.Add(new TreeNode<int>(15));
+      root.Children[0].Children[0].Children.Add(new TreeNode<int>(7));
+      root.Children[1].Children.Add(new TreeNode<int>(30));
+      root.Children[1].Children[0].Children.Add(new TreeNode<int>(22));
 
-      // The expected breadth-first traversal result: 1, 2, 3, 4, 5, 6, 7
-      List<int> expected = new List<int> { 1, 2, 3, 4, 5, 6, 7 };
+      // The expected transformed values for each node: Buzz, Fizz, Fizz, FizzBuzz, 7, Fizz, 22, FizzBuzz
+      List<string> expectedValues = new List<string> { "Buzz", "Fizz", "FizzBuzz", "7", "Fizz", "FizzBuzz", "22" };
 
-      List<int> result = bridthFirstClass.BreadthFirst(tree);
+      KaryTree<string> resultTree = fizzBuzzTreeClass.FizzBuzzTree(multiLevelTree);
 
-      Assert.Equal(expected, result);
+      // Verify the transformed values of the nodes in the result tree
+      VerifyTreeValues(resultTree.Root, expectedValues);
     }
+
+    public void VerifyTreeValues(TreeNode<string> node, List<string> expectedValues)
+    {
+      Assert.Equal(expectedValues[0], node.Value);
+      expectedValues.RemoveAt(0);
+
+      foreach (var child in node.Children)
+      {
+        VerifyTreeValues(child, expectedValues);
+      }
+    }
+
+
+
+
+
+
   }
 }
 
