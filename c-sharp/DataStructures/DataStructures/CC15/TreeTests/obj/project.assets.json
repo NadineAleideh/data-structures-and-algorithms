@@ -6135,11 +6135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\TreeTests.csproj",
+      "projectUniqueName": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\TreeTests.csproj",
       "projectName": "TreeTests",
-      "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\TreeTests.csproj",
+      "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\TreeTests.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\obj\\",
+      "outputPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6156,8 +6156,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\Trees\\Trees.csproj": {
-              "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\Trees\\Trees.csproj"
+            "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\Trees\\Trees.csproj": {
+              "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\Trees\\Trees.csproj"
             }
           }
         }

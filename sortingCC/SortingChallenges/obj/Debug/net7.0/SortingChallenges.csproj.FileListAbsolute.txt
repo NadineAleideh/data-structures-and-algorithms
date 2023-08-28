@@ -1,0 +1,15 @@
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.exe
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.deps.json
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.runtimeconfig.json
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.pdb
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.csproj.AssemblyReference.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.AssemblyInfoInputs.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.AssemblyInfo.cs
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.csproj.CoreCompileInputs.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\refint\SortingChallenges.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.pdb
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.genruntimeconfig.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\ref\SortingChallenges.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vUl0suHDeCbzLtF0dWELQdm7T8zyr+cVkojPL+4JgDKbjNmmJhuDLTqL8KfDeE3XO0izqo5AbiNwTxkuWfnaYA==",
+  "dgSpecHash": "E5e5MWzKboBxKVHx6wjaQwy8NWmynHvn7rCnBOEfpt1lk+upQCMxsVTssVmYOe6Z8bu7rw+FOxdHoPSbIAZhvg==",
   "success": true,
-  "projectFilePath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\TreeTests.csproj",
+  "projectFilePath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC15\\TreeTests\\TreeTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
