@@ -23,10 +23,10 @@ After sorting by year descending, the movies should be ordered from the most rec
 
 ## Code
 
-In the repository, you will find the code [here]()(../SortingChallenges/Program.cs).
+In the repository, you will find the code [here](../SortingChallenges/Program.cs).
 
 
 ## Testing
 
-In the repository, you will find a test file [here]()(../SortingChallengesTest/MovieSortingTests.cs). where you can write your test cases.
+In the repository, you will find a test file [here](../SortingChallengesTest/MovieSortingTests.cs). where you can write your test cases.
 
