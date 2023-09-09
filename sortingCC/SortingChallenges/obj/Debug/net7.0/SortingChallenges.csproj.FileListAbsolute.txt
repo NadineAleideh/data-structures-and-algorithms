@@ -3,7 +3,6 @@ E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChalle
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.runtimeconfig.json
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.dll
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\bin\Debug\net7.0\SortingChallenges.pdb
-E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.csproj.AssemblyReference.cache
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.GeneratedMSBuildEditorConfig.editorconfig
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.AssemblyInfoInputs.cache
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\sortingCC\SortingChallenges\obj\Debug\net7.0\SortingChallenges.AssemblyInfo.cs
