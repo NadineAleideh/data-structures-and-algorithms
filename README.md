@@ -21,4 +21,6 @@
 - CC26 README [here](./sortingCC/insertion/README.md)
 - CC27 README [here](./sortingCC/merge/README.md)
 - CC28 README [here](./sortingCC/Comparasion/README.md)
+- CC29 README [here](https://docs.google.com/spreadsheets/d/1qGHFB6uEwKSxEN4PltRLC7_KUo1CHhGG7_9az5_2WzY/edit?usp=sharing)
+- CC30 README [here](./c-sharp/DataStructures/README.md)
 
