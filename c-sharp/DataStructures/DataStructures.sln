@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CC13Test", "DataStructures\CC13\CC13Test\CC13Test.csproj", "{8A40A020-FD37-4F71-99DF-548BF9E1459B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HashtableCC", "HashtableCC", "{A7F9D0EB-D871-42D9-8EB1-3ABF5846B668}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\My files\ltuc\advance\CC&labs photos\CC30tests.PNG = ..\..\..\..\..\My files\ltuc\advance\CC&labs photos\CC30tests.PNG
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hashtable", "hashtable\hashtable.csproj", "{FD9E5644-D685-4694-B110-DA2C06BE2587}"
 EndProject
