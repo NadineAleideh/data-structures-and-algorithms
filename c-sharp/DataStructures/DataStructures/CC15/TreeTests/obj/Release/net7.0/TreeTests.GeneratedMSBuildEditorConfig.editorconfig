@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TreeTests
-build_property.ProjectDir = E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\TreeTests\
+build_property.ProjectDir = E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\TreeTests\
