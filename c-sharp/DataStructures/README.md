@@ -208,6 +208,6 @@ HashTable hashTable = new HashTable(1024);
 
 ## Test
 
-To see the test go to [hashtableTest](../hashtableTest/UnitTest1.cs)
+To see the test go to [hashtableTest](../DataStructures/hashtableTest/UnitTest1.cs)
 
 ![test](./CC30test.PNG)
