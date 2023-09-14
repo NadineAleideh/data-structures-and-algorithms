@@ -103,3 +103,6 @@ E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructure
 E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC13\CC13Test\obj\Debug\net7.0\CC13Test.pdb
 E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC13\CC13Test\obj\Debug\net7.0\CC13Test.genruntimeconfig.cache
 E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC13\CC13Test\obj\Debug\net7.0\ref\CC13Test.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC13\CC13Test\obj\Debug\net7.0\CC13Test.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC13\CC13Test\obj\Debug\net7.0\refint\CC13Test.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC13\CC13Test\obj\Debug\net7.0\CC13Test.pdb

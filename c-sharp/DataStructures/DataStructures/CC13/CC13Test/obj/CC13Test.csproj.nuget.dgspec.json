@@ -1,72 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {}
+    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {}
   },
   "projects": {
-    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
+    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj",
-        "projectName": "CC13",
-        "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
+        "projectUniqueName": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
         "projectName": "CC13Test",
-        "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
+        "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\obj\\",
+        "outputPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
-                "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj"
+              "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
+                "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj"
               }
             }
           }
@@ -136,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

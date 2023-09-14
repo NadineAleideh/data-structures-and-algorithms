@@ -13,3 +13,17 @@ E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructure
 E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.pdb
 E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.genruntimeconfig.cache
 E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\ref\Trees.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\bin\Debug\net7.0\Trees.exe
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\bin\Debug\net7.0\Trees.deps.json
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\bin\Debug\net7.0\Trees.runtimeconfig.json
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\bin\Debug\net7.0\Trees.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\bin\Debug\net7.0\Trees.pdb
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.AssemblyInfoInputs.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.AssemblyInfo.cs
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.csproj.CoreCompileInputs.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\refint\Trees.dll
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.pdb
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\Trees.genruntimeconfig.cache
+E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\DataStructures\CC15\Trees\obj\Debug\net7.0\ref\Trees.dll
