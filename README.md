@@ -23,4 +23,4 @@
 - CC28 README [here](./sortingCC/Comparasion/README.md)
 - CC29 README [here](https://docs.google.com/spreadsheets/d/1qGHFB6uEwKSxEN4PltRLC7_KUo1CHhGG7_9az5_2WzY/edit?usp=sharing)
 - CC30 README [here](./c-sharp/DataStructures/README.md)
-
+- CC31 README [here](./c-sharp/DataStructures/hashtable/CC31/README.md)
