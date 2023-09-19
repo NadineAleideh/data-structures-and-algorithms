@@ -6107,7 +6107,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj",
+      "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
@@ -6120,11 +6120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
+      "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
       "projectName": "CC13Test",
-      "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
+      "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\obj\\",
+      "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6141,8 +6141,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
-              "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj"
+            "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
+              "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj"
             }
           }
         }
@@ -6202,8 +6202,8 @@
     {
       "code": "NU1105",
       "level": "Error",
-      "message": "Unable to find project information for 'E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj",
+      "message": "Unable to find project information for 'E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj",
       "targetGraphs": [
         "net7.0"
       ]

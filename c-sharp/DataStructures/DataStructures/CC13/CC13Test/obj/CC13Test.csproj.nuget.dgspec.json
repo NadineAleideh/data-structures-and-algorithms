@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {}
+    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {}
   },
   "projects": {
-    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {
+    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
+        "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
         "projectName": "CC13Test",
-        "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
+        "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\CC13Test.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\obj\\",
+        "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
-                "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj"
+              "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj": {
+                "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\DataStructures\\CC13\\CC13.csproj"
               }
             }
           }

@@ -12,3 +12,17 @@ E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.pdb
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.genruntimeconfig.cache
 E:\DotNet\DS&A-challenges\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\ref\hashtable.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\bin\Debug\net7.0\hashtable.exe
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\bin\Debug\net7.0\hashtable.deps.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\bin\Debug\net7.0\hashtable.runtimeconfig.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\bin\Debug\net7.0\hashtable.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\bin\Debug\net7.0\hashtable.pdb
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.AssemblyInfoInputs.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.AssemblyInfo.cs
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.csproj.CoreCompileInputs.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\refint\hashtable.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.pdb
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\hashtable.genruntimeconfig.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\hashtable\obj\Debug\net7.0\ref\hashtable.dll
