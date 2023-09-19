@@ -41,41 +41,69 @@ namespace hashtable
       //  Console.WriteLine(key);
       //}
 
+      //CC31
+      //string input1 = "Once upon a time, there was a brave princess who...";
+      //string input2 =
+      //    "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
+      //string input3 =
+      //    "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
 
-      string input1 = "Once upon a time, there was a brave princess who...";
-      string input2 =
-          "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
-      string input3 =
-          "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
-
-      Console.WriteLine(RepeatedWord(input1)); // Output: "a"
-      Console.WriteLine(RepeatedWord(input2)); // Output: "it"
-      Console.WriteLine(RepeatedWord(input3)); // Output: "summer"
-
-    }
+      //Console.WriteLine(RepeatedWord(input1)); // Output: "a"
+      //Console.WriteLine(RepeatedWord(input2)); // Output: "it"
+      //Console.WriteLine(RepeatedWord(input3)); // Output: "summer"
 
 
-    public static string RepeatedWord(string input)
-    {
-      // Split the input string into words using regular expressions
-      string[] words = Regex.Split(input.ToLower(), @"\W+");
-
-      HashSet<string> wordSet = new HashSet<string>();
-
-      foreach (string word in words)
+      BinaryTree tree1 = new BinaryTree
       {
-        // If the word is already in the HashSet, it's a repeated word, return it
-        if (wordSet.Contains(word))
+        Root = new TreeNode(1)
         {
-          return word;
+          Left = new TreeNode(2),
+          Right = new TreeNode(3)
         }
+      };
 
-        // Otherwise, add the word to the HashSet
-        wordSet.Add(word);
+      BinaryTree tree2 = new BinaryTree
+      {
+        Root = new TreeNode(2)
+        {
+          Left = new TreeNode(3),
+          Right = new TreeNode(4)
+        }
+      };
+
+      HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+
+      foreach (int value in commonValues)
+      {
+        Console.WriteLine("Common Value: " + value);
       }
 
-      // If no repeated words are found, return an empty string
-      return "";
+
     }
+
+    //CC31
+
+    //public static string RepeatedWord(string input)
+    //{
+    //  // Split the input string into words using regular expressions
+    //  string[] words = Regex.Split(input.ToLower(), @"\W+");
+
+    //  HashSet<string> wordSet = new HashSet<string>();
+
+    //  foreach (string word in words)
+    //  {
+    //    // If the word is already in the HashSet, it's a repeated word, return it
+    //    if (wordSet.Contains(word))
+    //    {
+    //      return word;
+    //    }
+
+    //    // Otherwise, add the word to the HashSet
+    //    wordSet.Add(word);
+    //  }
+
+    //  // If no repeated words are found, return an empty string
+    //  return "";
+    //}
   }
 }

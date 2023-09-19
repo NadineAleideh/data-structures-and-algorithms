@@ -116,41 +116,106 @@ namespace hashtableTest
     //  Assert.InRange(index, 0, 1023);
     //}
 
+
+    //CC31
+    //[Fact]
+    //public void RepeatedWord_FindsFirstRepeatedWord()
+    //{
+    //  // Arrange
+    //  string input1 = "Once upon a time, there was a brave princess who...";
+    //  string input2 =
+    //      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
+    //  string input3 =
+    //      "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+
+
+    //  // Act and Assert
+    //  Assert.Equal("a", Program.RepeatedWord(input1));
+    //  Assert.Equal("it", Program.RepeatedWord(input2));
+    //  Assert.Equal("summer", Program.RepeatedWord(input3));
+    //}
+
+    //[Fact]
+    //public void RepeatedWord_NoRepeatedWord_ReturnsEmptyString()
+    //{
+    //  // Arrange
+    //  string input = "This is a test sentence without repeated words.";
+
+    //  // Act and Assert
+    //  Assert.Equal("", Program.RepeatedWord(input));
+    //}
+
+    //[Fact]
+    //public void RepeatedWord_EmptyString_ReturnsEmptyString()
+    //{
+    //  // Arrange
+    //  string input = "";
+
+    //  // Act and Assert
+    //  Assert.Equal("", Program.RepeatedWord(input));
+    //}
+
+
+    //CC32
+
     [Fact]
-    public void RepeatedWord_FindsFirstRepeatedWord()
+    public void FindCommonValues_ReturnsCommonValues()
     {
-      // Arrange
-      string input1 = "Once upon a time, there was a brave princess who...";
-      string input2 =
-          "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
-      string input3 =
-          "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+      // Create the first binary tree
+      BinaryTree tree1 = new BinaryTree
+      {
+        Root = new TreeNode(1)
+        {
+          Left = new TreeNode(2),
+          Right = new TreeNode(3)
+        }
+      };
 
+      // Create the second binary tree
+      BinaryTree tree2 = new BinaryTree
+      {
+        Root = new TreeNode(2)
+        {
+          Left = new TreeNode(3),
+          Right = new TreeNode(4)
+        }
+      };
 
-      // Act and Assert
-      Assert.Equal("a", Program.RepeatedWord(input1));
-      Assert.Equal("it", Program.RepeatedWord(input2));
-      Assert.Equal("summer", Program.RepeatedWord(input3));
+      // Call the FindCommonValues method
+      HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+
+      // Assert that the common values are as expected
+      Assert.Contains(2, commonValues);
+      Assert.Contains(3, commonValues);
+      Assert.DoesNotContain(1, commonValues);
+      Assert.DoesNotContain(4, commonValues);
     }
 
     [Fact]
-    public void RepeatedWord_NoRepeatedWord_ReturnsEmptyString()
+    public void FindCommonValues_NoCommonValues_ReturnsEmptySet()
     {
-      // Arrange
-      string input = "This is a test sentence without repeated words.";
+      // Create two binary trees with no common values
+      BinaryTree tree1 = new BinaryTree
+      {
+        Root = new TreeNode(1)
+        {
+          Left = new TreeNode(2)
+        }
+      };
 
-      // Act and Assert
-      Assert.Equal("", Program.RepeatedWord(input));
-    }
+      BinaryTree tree2 = new BinaryTree
+      {
+        Root = new TreeNode(3)
+        {
+          Left = new TreeNode(4)
+        }
+      };
 
-    [Fact]
-    public void RepeatedWord_EmptyString_ReturnsEmptyString()
-    {
-      // Arrange
-      string input = "";
+      // Call the FindCommonValues method
+      HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
 
-      // Act and Assert
-      Assert.Equal("", Program.RepeatedWord(input));
+      // Assert that the common values set is empty
+      Assert.Empty(commonValues);
     }
   }
 }

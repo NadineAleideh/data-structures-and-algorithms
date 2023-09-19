@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj": {}
+    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj": {}
   },
   "projects": {
-    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj": {
+    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj",
+        "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj",
         "projectName": "hashtableTest",
-        "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj",
+        "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\hashtableTest.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\obj\\",
+        "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtableTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj": {
-                "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj"
+              "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj": {
+                "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj": {
+    "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj",
+        "projectUniqueName": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj",
         "projectName": "hashtable",
-        "projectPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj",
+        "projectPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\hashtable.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "E:\\DotNet\\DS&A-challenges\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\obj\\",
+        "outputPath": "E:\\DotNet\\CC\\data-structures-and-algorithms\\c-sharp\\DataStructures\\hashtable\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
