@@ -25,3 +25,5 @@
 - CC30 README [here](./c-sharp/DataStructures/README.md)
 - CC31 README [here](./c-sharp/DataStructures/hashtable/CC31/README.md)
 - CC32 README [here](./c-sharp/DataStructures/hashtable/CC32/README.md)
+- CC33 README [here](./c-sharp/DataStructures/hashtable/CC33/README.md)
+
