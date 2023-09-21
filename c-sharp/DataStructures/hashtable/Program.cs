@@ -52,32 +52,60 @@ namespace hashtable
       //Console.WriteLine(RepeatedWord(input2)); // Output: "it"
       //Console.WriteLine(RepeatedWord(input3)); // Output: "summer"
 
+      //CC32
+      //BinaryTree tree1 = new BinaryTree
+      //{
+      //  Root = new TreeNode(1)
+      //  {
+      //    Left = new TreeNode(2),
+      //    Right = new TreeNode(3)
+      //  }
+      //};
 
-      BinaryTree tree1 = new BinaryTree
-      {
-        Root = new TreeNode(1)
+      //BinaryTree tree2 = new BinaryTree
+      //{
+      //  Root = new TreeNode(2)
+      //  {
+      //    Left = new TreeNode(3),
+      //    Right = new TreeNode(4)
+      //  }
+      //};
+
+      //HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+
+      //foreach (int value in commonValues)
+      //{
+      //  Console.WriteLine("Common Value: " + value);
+      //}
+
+
+      //CC33
+      // Sample synonyms and antonyms dictionaries
+      Dictionary<string, string> synonyms = new Dictionary<string, string>
         {
-          Left = new TreeNode(2),
-          Right = new TreeNode(3)
-        }
-      };
+            { "diligent", "employed" },
+            { "fond", "enamored" },
+            { "guide", "usher" },
+            { "outfit", "garb" },
+            { "wrath", "anger" }
+        };
 
-      BinaryTree tree2 = new BinaryTree
-      {
-        Root = new TreeNode(2)
+      Dictionary<string, string> antonyms = new Dictionary<string, string>
         {
-          Left = new TreeNode(3),
-          Right = new TreeNode(4)
-        }
-      };
+            { "diligent", "idle" },
+            { "fond", "averse" },
+            { "guide", "follow" },
+            { "flow", "jam" },
+            { "wrath", "delight" }
+        };
 
-      HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+      List<List<string>> result = LeftJoin(synonyms, antonyms);
 
-      foreach (int value in commonValues)
+      // Print the result
+      foreach (List<string> row in result)
       {
-        Console.WriteLine("Common Value: " + value);
+        Console.WriteLine("[" + string.Join(", ", row) + "]");
       }
-
 
     }
 
@@ -105,5 +133,32 @@ namespace hashtable
     //  // If no repeated words are found, return an empty string
     //  return "";
     //}
+
+
+    //CC33
+    public static List<List<string>> LeftJoin(Dictionary<string, string> synonyms, Dictionary<string, string> antonyms)
+    {
+      List<List<string>> result = new List<List<string>>();
+
+      foreach (KeyValuePair<string, string> kvp in synonyms)
+      {
+        string word = kvp.Key;
+        string synonym = kvp.Value;
+
+        // Check if the word has an antonym in the antonyms dictionary
+        if (antonyms.ContainsKey(word))
+        {
+          string antonym = antonyms[word];
+          result.Add(new List<string> { word, synonym, antonym });
+        }
+        else
+        {
+          // If no antonym exists, add a null value
+          result.Add(new List<string> { word, synonym, null });
+        }
+      }
+
+      return result;
+    }
   }
 }
