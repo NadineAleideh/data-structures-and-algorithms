@@ -158,64 +158,143 @@ namespace hashtableTest
 
     //CC32
 
+    //[Fact]
+    //public void FindCommonValues_ReturnsCommonValues()
+    //{
+    //  // Create the first binary tree
+    //  BinaryTree tree1 = new BinaryTree
+    //  {
+    //    Root = new TreeNode(1)
+    //    {
+    //      Left = new TreeNode(2),
+    //      Right = new TreeNode(3)
+    //    }
+    //  };
+
+    //  // Create the second binary tree
+    //  BinaryTree tree2 = new BinaryTree
+    //  {
+    //    Root = new TreeNode(2)
+    //    {
+    //      Left = new TreeNode(3),
+    //      Right = new TreeNode(4)
+    //    }
+    //  };
+
+    //  // Call the FindCommonValues method
+    //  HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+
+    //  // Assert that the common values are as expected
+    //  Assert.Contains(2, commonValues);
+    //  Assert.Contains(3, commonValues);
+    //  Assert.DoesNotContain(1, commonValues);
+    //  Assert.DoesNotContain(4, commonValues);
+    //}
+
+    //[Fact]
+    //public void FindCommonValues_NoCommonValues_ReturnsEmptySet()
+    //{
+    //  // Create two binary trees with no common values
+    //  BinaryTree tree1 = new BinaryTree
+    //  {
+    //    Root = new TreeNode(1)
+    //    {
+    //      Left = new TreeNode(2)
+    //    }
+    //  };
+
+    //  BinaryTree tree2 = new BinaryTree
+    //  {
+    //    Root = new TreeNode(3)
+    //    {
+    //      Left = new TreeNode(4)
+    //    }
+    //  };
+
+    //  // Call the FindCommonValues method
+    //  HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+
+    //  // Assert that the common values set is empty
+    //  Assert.Empty(commonValues);
+    // }
+
+    //CC33
     [Fact]
-    public void FindCommonValues_ReturnsCommonValues()
+    public void LeftJoin_WithMatchingValues_ReturnsJoinedData()
     {
-      // Create the first binary tree
-      BinaryTree tree1 = new BinaryTree
-      {
-        Root = new TreeNode(1)
+      // Arrange
+      Dictionary<string, string> synonyms = new Dictionary<string, string>
         {
-          Left = new TreeNode(2),
-          Right = new TreeNode(3)
-        }
-      };
+            { "diligent", "employed" },
+            { "fond", "enamored" },
+            { "guide", "usher" },
+            { "outfit", "garb" },
+            { "wrath", "anger" }
+        };
 
-      // Create the second binary tree
-      BinaryTree tree2 = new BinaryTree
-      {
-        Root = new TreeNode(2)
+      Dictionary<string, string> antonyms = new Dictionary<string, string>
         {
-          Left = new TreeNode(3),
-          Right = new TreeNode(4)
-        }
-      };
+            { "diligent", "idle" },
+            { "fond", "averse" },
+            { "guide", "follow" },
+            { "flow", "jam" },
+            { "wrath", "delight" }
+        };
 
-      // Call the FindCommonValues method
-      HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+      // Act
+      List<List<string>> result = Program.LeftJoin(synonyms, antonyms);
 
-      // Assert that the common values are as expected
-      Assert.Contains(2, commonValues);
-      Assert.Contains(3, commonValues);
-      Assert.DoesNotContain(1, commonValues);
-      Assert.DoesNotContain(4, commonValues);
+      // Assert
+      Assert.Collection(result,
+          row => Assert.Equal(new List<string> { "diligent", "employed", "idle" }, row),
+          row => Assert.Equal(new List<string> { "fond", "enamored", "averse" }, row),
+          row => Assert.Equal(new List<string> { "guide", "usher", "follow" }, row),
+          row => Assert.Equal(new List<string> { "outfit", "garb", null }, row),
+          row => Assert.Equal(new List<string> { "wrath", "anger", "delight" }, row)
+      );
     }
 
     [Fact]
-    public void FindCommonValues_NoCommonValues_ReturnsEmptySet()
+    public void LeftJoin_WithNoMatchingValues_ReturnsJoinedDataWithNullAntonyms()
     {
-      // Create two binary trees with no common values
-      BinaryTree tree1 = new BinaryTree
-      {
-        Root = new TreeNode(1)
+      // Arrange
+      Dictionary<string, string> synonyms = new Dictionary<string, string>
         {
-          Left = new TreeNode(2)
-        }
-      };
+            { "apple", "fruit" },
+            { "banana", "fruit" },
+            { "carrot", "vegetable" }
+        };
 
-      BinaryTree tree2 = new BinaryTree
-      {
-        Root = new TreeNode(3)
+      Dictionary<string, string> antonyms = new Dictionary<string, string>
         {
-          Left = new TreeNode(4)
-        }
-      };
+            { "dog", "cat" },
+            { "elephant", "giraffe" },
+            { "lion", "tiger" }
+        };
 
-      // Call the FindCommonValues method
-      HashSet<int> commonValues = TreeIntersection.FindCommonValues(tree1, tree2);
+      // Act
+      List<List<string>> result = Program.LeftJoin(synonyms, antonyms);
 
-      // Assert that the common values set is empty
-      Assert.Empty(commonValues);
+      // Assert
+      Assert.Collection(result,
+          row => Assert.Equal(new List<string> { "apple", "fruit", null }, row),
+          row => Assert.Equal(new List<string> { "banana", "fruit", null }, row),
+          row => Assert.Equal(new List<string> { "carrot", "vegetable", null }, row)
+      );
+    }
+
+    [Fact]
+    public void LeftJoin_WithEmptyInput_ReturnsEmptyResult()
+    {
+      // Arrange
+      Dictionary<string, string> synonyms = new Dictionary<string, string>();
+      Dictionary<string, string> antonyms = new Dictionary<string, string>();
+
+      // Act
+      List<List<string>> result = Program.LeftJoin(synonyms, antonyms);
+
+      // Assert
+      Assert.Empty(result);
     }
   }
 }
