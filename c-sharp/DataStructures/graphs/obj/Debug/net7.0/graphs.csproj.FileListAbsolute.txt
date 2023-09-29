@@ -1,0 +1,14 @@
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\bin\Debug\net7.0\graphs.exe
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\bin\Debug\net7.0\graphs.deps.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\bin\Debug\net7.0\graphs.runtimeconfig.json
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\bin\Debug\net7.0\graphs.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\bin\Debug\net7.0\graphs.pdb
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.GeneratedMSBuildEditorConfig.editorconfig
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.AssemblyInfoInputs.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.AssemblyInfo.cs
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.csproj.CoreCompileInputs.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\refint\graphs.dll
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.pdb
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\graphs.genruntimeconfig.cache
+E:\DotNet\CC\data-structures-and-algorithms\c-sharp\DataStructures\graphs\obj\Debug\net7.0\ref\graphs.dll
