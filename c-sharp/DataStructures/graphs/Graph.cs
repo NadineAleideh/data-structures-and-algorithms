@@ -58,5 +58,41 @@ namespace graphs
     {
       return adjacencyList.Count;
     }
+
+
+
+    //CC36
+
+    public IEnumerable<string> BreadthFirstTraversal(string startNode)
+    {
+      if (!adjacencyList.ContainsKey(startNode))
+      {
+        throw new ArgumentException("Start node is not in the graph.");
+      }
+
+      var visited = new HashSet<string>();
+      var result = new List<string>();
+      var queue = new Queue<string>();
+
+      visited.Add(startNode);
+      queue.Enqueue(startNode);
+
+      while (queue.Count > 0)
+      {
+        var currentNode = queue.Dequeue();
+        result.Add(currentNode);
+
+        foreach (var neighbor in adjacencyList[currentNode])
+        {
+          if (!visited.Contains(neighbor.Item1))
+          {
+            visited.Add(neighbor.Item1);
+            queue.Enqueue(neighbor.Item1);
+          }
+        }
+      }
+
+      return result;
+    }
   }
 }

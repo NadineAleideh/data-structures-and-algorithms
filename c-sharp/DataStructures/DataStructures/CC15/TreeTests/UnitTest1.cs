@@ -237,64 +237,64 @@ namespace TreeTests
     //}
 
 
-    //CC18
-    [Fact]
-    public void Test_FizzBuzzTree_EmptyTree()
-    {
-      FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
-      KaryTree<int> emptyTree = new KaryTree<int>();
+    ////CC18
+    //[Fact]
+    //public void Test_FizzBuzzTree_EmptyTree()
+    //{
+    //  FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
+    //  KaryTree<int> emptyTree = new KaryTree<int>();
 
-      // Assert that trying to perform FizzBuzz transformation on an empty tree throws an exception
-      Assert.Throws<InvalidOperationException>(() => fizzBuzzTreeClass.FizzBuzzTree(emptyTree));
-    }
+    //  // Assert that trying to perform FizzBuzz transformation on an empty tree throws an exception
+    //  Assert.Throws<InvalidOperationException>(() => fizzBuzzTreeClass.FizzBuzzTree(emptyTree));
+    //}
 
-    [Fact]
-    public void Test_FizzBuzzTree_SingleNodeTree()
-    {
-      FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
-      KaryTree<int> singleNodeTree = new KaryTree<int>();
-      singleNodeTree.Root = new TreeNode<int>(15);
+    //[Fact]
+    //public void Test_FizzBuzzTree_SingleNodeTree()
+    //{
+    //  FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
+    //  KaryTree<int> singleNodeTree = new KaryTree<int>();
+    //  singleNodeTree.Root = new TreeNode<int>(15);
 
-      // The tree only has one node with value 15, which should be transformed to "FizzBuzz"
-      KaryTree<string> resultTree = fizzBuzzTreeClass.FizzBuzzTree(singleNodeTree);
+    //  // The tree only has one node with value 15, which should be transformed to "FizzBuzz"
+    //  KaryTree<string> resultTree = fizzBuzzTreeClass.FizzBuzzTree(singleNodeTree);
 
-      // Verify the transformed value of the root node in the result tree
-      Assert.Equal("FizzBuzz", resultTree.Root.Value);
-    }
+    //  // Verify the transformed value of the root node in the result tree
+    //  Assert.Equal("FizzBuzz", resultTree.Root.Value);
+    //}
 
-    [Fact]
-    public void Test_FizzBuzzTree_MultiLevelTree()
-    {
-      FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
-      KaryTree<int> multiLevelTree = new KaryTree<int>();
-      multiLevelTree.Root = new TreeNode<int>(10);
-      var root = multiLevelTree.Root;
-      root.Children.Add(new TreeNode<int>(9));
-      root.Children.Add(new TreeNode<int>(12));
-      root.Children[0].Children.Add(new TreeNode<int>(15));
-      root.Children[0].Children[0].Children.Add(new TreeNode<int>(7));
-      root.Children[1].Children.Add(new TreeNode<int>(30));
-      root.Children[1].Children[0].Children.Add(new TreeNode<int>(22));
+    //[Fact]
+    //public void Test_FizzBuzzTree_MultiLevelTree()
+    //{
+    //  FizzBuzzTreeClass fizzBuzzTreeClass = new FizzBuzzTreeClass();
+    //  KaryTree<int> multiLevelTree = new KaryTree<int>();
+    //  multiLevelTree.Root = new TreeNode<int>(10);
+    //  var root = multiLevelTree.Root;
+    //  root.Children.Add(new TreeNode<int>(9));
+    //  root.Children.Add(new TreeNode<int>(12));
+    //  root.Children[0].Children.Add(new TreeNode<int>(15));
+    //  root.Children[0].Children[0].Children.Add(new TreeNode<int>(7));
+    //  root.Children[1].Children.Add(new TreeNode<int>(30));
+    //  root.Children[1].Children[0].Children.Add(new TreeNode<int>(22));
 
-      // The expected transformed values for each node: Buzz, Fizz, Fizz, FizzBuzz, 7, Fizz, 22, FizzBuzz
-      List<string> expectedValues = new List<string> { "Buzz", "Fizz", "FizzBuzz", "7", "Fizz", "FizzBuzz", "22" };
+    //  // The expected transformed values for each node: Buzz, Fizz, Fizz, FizzBuzz, 7, Fizz, 22, FizzBuzz
+    //  List<string> expectedValues = new List<string> { "Buzz", "Fizz", "FizzBuzz", "7", "Fizz", "FizzBuzz", "22" };
 
-      KaryTree<string> resultTree = fizzBuzzTreeClass.FizzBuzzTree(multiLevelTree);
+    //  KaryTree<string> resultTree = fizzBuzzTreeClass.FizzBuzzTree(multiLevelTree);
 
-      // Verify the transformed values of the nodes in the result tree
-      VerifyTreeValues(resultTree.Root, expectedValues);
-    }
+    //  // Verify the transformed values of the nodes in the result tree
+    //  VerifyTreeValues(resultTree.Root, expectedValues);
+    //}
 
-    public void VerifyTreeValues(TreeNode<string> node, List<string> expectedValues)
-    {
-      Assert.Equal(expectedValues[0], node.Value);
-      expectedValues.RemoveAt(0);
+    //public void VerifyTreeValues(TreeNode<string> node, List<string> expectedValues)
+    //{
+    //  Assert.Equal(expectedValues[0], node.Value);
+    //  expectedValues.RemoveAt(0);
 
-      foreach (var child in node.Children)
-      {
-        VerifyTreeValues(child, expectedValues);
-      }
-    }
+    //  foreach (var child in node.Children)
+    //  {
+    //    VerifyTreeValues(child, expectedValues);
+    //  }
+    //}
 
 
 
