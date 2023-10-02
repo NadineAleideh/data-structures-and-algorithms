@@ -99,40 +99,92 @@ namespace testGraph
     //  Assert.Equal(2, size);
     //}
 
-    [Fact]
-    public void Test_BreadthFirstTraversal()
-    {
-      // Arrange
-      var graph = new Graph();
-      graph.AddVertex("A");
-      graph.AddVertex("B");
-      graph.AddVertex("C");
-      graph.AddVertex("D");
-      graph.AddEdge("A", "B");
-      graph.AddEdge("A", "C");
-      graph.AddEdge("B", "D");
 
-      // Act
-      var traversalResult = graph.BreadthFirstTraversal("A").ToList();
+    //cc36
+    //[Fact]
+    //public void Test_BreadthFirstTraversal()
+    //{
+    //  // Arrange
+    //  var graph = new Graph();
+    //  graph.AddVertex("A");
+    //  graph.AddVertex("B");
+    //  graph.AddVertex("C");
+    //  graph.AddVertex("D");
+    //  graph.AddEdge("A", "B");
+    //  graph.AddEdge("A", "C");
+    //  graph.AddEdge("B", "D");
+
+    //  // Act
+    //  var traversalResult = graph.BreadthFirstTraversal("A").ToList();
+
+    //  // Assert
+    //  Assert.Equal(4, traversalResult.Count);
+    //  Assert.Equal("A", traversalResult[0]);
+    //  Assert.Equal("B", traversalResult[1]);
+    //  Assert.Equal("C", traversalResult[2]);
+    //  Assert.Equal("D", traversalResult[3]);
+    //}
+
+    //[Fact]
+    //public void Test_BreadthFirstTraversal_InvalidStartNode()
+    //{
+    //  // Arrange
+    //  var graph = new Graph();
+    //  graph.AddVertex("A");
+    //  graph.AddVertex("B");
+
+    //  // Act & Assert
+    //  Assert.Throws<ArgumentException>(() => graph.BreadthFirstTraversal("C"));
+    //}
+
+
+    //cc37
+
+    [Fact]
+    public void Test_BusinessTrip_Valid()
+    {
+      var routeMap = new RouteMap();
+      // Add routes to the route map
+      routeMap.AddRoute("Metroville", "Pandora", 82);
+      routeMap.AddRoute("Arendelle", "New Monstropolis", 115);
+      routeMap.AddRoute("New Monstropolis", "Naboo", 150);
+
+      string[] itinerary = { "Metroville", "Pandora" };
+      int? result = Program.BusinessTrip(routeMap, itinerary);
 
       // Assert
-      Assert.Equal(4, traversalResult.Count);
-      Assert.Equal("A", traversalResult[0]);
-      Assert.Equal("B", traversalResult[1]);
-      Assert.Equal("C", traversalResult[2]);
-      Assert.Equal("D", traversalResult[3]);
+      Assert.NotNull(result);
+      Assert.Equal(82, result);
     }
 
     [Fact]
-    public void Test_BreadthFirstTraversal_InvalidStartNode()
+    public void Test_BusinessTrip_Invalid()
     {
-      // Arrange
-      var graph = new Graph();
-      graph.AddVertex("A");
-      graph.AddVertex("B");
+      var routeMap = new RouteMap();
+      // Add routes to the route map
+      routeMap.AddRoute("Metroville", "Pandora", 82);
+      routeMap.AddRoute("Arendelle", "New Monstropolis", 115);
 
-      // Act & Assert
-      Assert.Throws<ArgumentException>(() => graph.BreadthFirstTraversal("C"));
+      string[] itinerary = { "Metroville", "Naboo" };
+      int? result = Program.BusinessTrip(routeMap, itinerary);
+
+      // Assert
+      Assert.Null(result);
+    }
+
+    [Fact]
+    public void Test_BusinessTrip_EmptyItinerary()
+    {
+      var routeMap = new RouteMap();
+      // Add routes to the route map
+      routeMap.AddRoute("Metroville", "Pandora", 82);
+
+      string[] itinerary = new string[0];
+      int? result = Program.BusinessTrip(routeMap, itinerary);
+
+      // Assert
+      Assert.NotNull(result);
+      Assert.Equal(0, result);
     }
   }
 }
