@@ -25,7 +25,7 @@ conducting a depth-first pre-order traversal on a graph. Depth-first pre-order t
    ```
 
    ## Output
-   ![out](./cc38out.PNG)
+   ![out](./CC38out.PNG)
 
 ## Test 
 
