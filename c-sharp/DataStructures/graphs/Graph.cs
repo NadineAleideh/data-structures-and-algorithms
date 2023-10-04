@@ -94,5 +94,38 @@ namespace graphs
 
       return result;
     }
+
+
+    //CC38
+
+    public IEnumerable<string> DepthFirstPreOrder(string startNode)
+    {
+      if (!adjacencyList.ContainsKey(startNode))
+      {
+        throw new ArgumentException("Start node is not in the graph.");
+      }
+
+      var visited = new HashSet<string>();
+      var result = new List<string>();
+
+      DepthFirstPreOrderHelper(startNode, visited, result);
+
+      return result;
+    }
+
+    private void DepthFirstPreOrderHelper(string node, HashSet<string> visited, List<string> result)
+    {
+      visited.Add(node);
+      result.Add(node);
+
+      foreach (var neighbor in adjacencyList[node])
+      {
+        if (!visited.Contains(neighbor.Item1))
+        {
+          DepthFirstPreOrderHelper(neighbor.Item1, visited, result);
+        }
+      }
+    }
+
   }
 }
