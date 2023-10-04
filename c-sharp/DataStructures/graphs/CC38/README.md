@@ -1,4 +1,4 @@
-# Graph FT
+# Graph DFT
 conducting a depth-first pre-order traversal on a graph. Depth-first pre-order traversal visits each node in the graph and records nodes in the order they are visited.
 ## Whiteboard Process
 
